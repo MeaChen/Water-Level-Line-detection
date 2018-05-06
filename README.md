@@ -28,7 +28,9 @@ Please use both trigonometric and exponential functions of Fourier transform to 
 ## Asignment 6: SIFT
 ### Try with SIFT / SUF
 Apply SIFT or SURF class in OpenCV 
-（http://docs.opencv.org/2.4/modules/nonfree/doc/feature_detection.html#sift）: 
+
+> http://docs.opencv.org/2.4/modules/nonfree/doc/feature_detection.html#sift
+
 Extract features in photos taken by yourself, the image may be of different orientation, illumination and scale. Tr to match the two images with the use of SIFT/SURF descriptor.
 
 
