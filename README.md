@@ -35,3 +35,24 @@ Extract features in photos taken by yourself, the image may be of different orie
 
 
 # Final Project
+
+To detect and calculate the water level line of the image.
+
+The results are shown in the `./final/result` folder. All the detected letter "E"s are enclosed in a frame. The frames in red are screened out. There are two lines in the image, one is water level line and the other is the line fitted according to the detected "E"s.
+
+##Algorithm
+
+### Detection of Letter "E"
+
+1. Hog feature extraction plus svm classifier
+2. Different classifiers for different scales
+
+### Detection of water level line
+1. Use grabCut to get roughly position of the ruler
+2. Extract lower outline to fit the line
+
+### Calculation of water level line
+1. Pre-process detected "E", including screening out wrong, overlapped "E"s, supplementing lost "E"s.
+2. Select centers of the detected frames to fit a line, and calculate the intersection point of this line and the water level line.
+### Others
+Affine transformation will be applied in getting a normal "E".
